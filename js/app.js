@@ -34,7 +34,7 @@ document.getElementById('total-cost').addEventListener('click', function () {
 
 })
 
-function getName(id) {
+function getName(playerId) {
     const selectId = document.getElementById(id)
     const name = selectId.getElementsByTagName('h5')
     const playerName = name[0].innerText;
@@ -49,6 +49,13 @@ function getGoal(goalId) {
     const goalField = document.getElementById('goal');
     goalField.innerText = goal;
     return goal;
+}
+function getGoal(assistId) {
+    const id = document.getElementById(assistId);
+    const assist = id.getElementsByTagName('p')[1].outerText;
+    const assistField = document.getElementById('assist');
+    assistField.innerText = assist;
+    return assist;
 }
 
 
