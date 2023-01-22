@@ -35,7 +35,7 @@ document.getElementById('total-cost').addEventListener('click', function () {
 })
 
 function getName(playerId) {
-    const selectId = document.getElementById(id)
+    const selectId = document.getElementById(playerId)
     const name = selectId.getElementsByTagName('h5')
     const playerName = name[0].innerText;
     const nameField = document.getElementById('name');
@@ -50,7 +50,7 @@ function getGoal(goalId) {
     goalField.innerText = goal;
     return goal;
 }
-function getGoal(assistId) {
+function getAssist(assistId) {
     const id = document.getElementById(assistId);
     const assist = id.getElementsByTagName('p')[1].outerText;
     const assistField = document.getElementById('assist');
@@ -62,30 +62,47 @@ function getGoal(assistId) {
 document.getElementById('select1').addEventListener('click', function () {
     getName('neymer')
     getGoal('neymer')
+    getAssist('neymer')
 })
 document.getElementById('select2').addEventListener('click', function () {
     getName('richarlison')
+    getGoal('richarlison')
+    getAssist('richarlison')
 
 })
 document.getElementById('select3').addEventListener('click', function () {
     getName('alison')
+    getGoal('alison')
+    getAssist('alison')
 })
 document.getElementById('select4').addEventListener('click', function () {
     getName('antony')
+    getGoal('antony')
+    getAssist('antony')
 })
 document.getElementById('select5').addEventListener('click', function () {
     getName('jesus')
+    getGoal('jesus')
+    getAssist('jesus')
 })
 document.getElementById('select6').addEventListener('click', function () {
     getName('pedro')
+    getGoal('pedro')
+    getAssist('pedro')
 })
 document.getElementById('select7').addEventListener('click', function () {
     getName('rapinho')
+    getGoal('rapinho')
+    getAssist('rapinho')
 })
 document.getElementById('select8').addEventListener('click', function () {
     getName('silva')
+    getGoal('silva')
+    getAssist('silva')
 })
 document.getElementById('select9').addEventListener('click', function () {
     getName('vinius')
+    getGoal('vinius')
+    getAssist('vinius')
 })
 
